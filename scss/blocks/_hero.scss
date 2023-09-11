@@ -33,8 +33,7 @@ main{
 
 
 .hero__wrapper{
-    width: 100%;
-    max-width: 272px;
+    width: 272px;
 }
 
 .hero__title{
@@ -79,4 +78,49 @@ main{
 
 .hero__btn:active{
     opacity: 0.8;
+}
+
+
+@media only screen and (max-width:576px) {
+    .hero{
+        overflow-x: scroll;
+    }
+
+    .hero__inner{
+        padding-bottom: 32px;
+    }
+
+    .hero__item{
+        padding: 16px 71px 86px 16px;
+        width: 327px;
+        background-image: url("../images/heroMobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        background-color:  #54A6FF;
+    }
+
+    .hero__item:nth-child(2){
+        background-image: url("../images/heroBg2Mobile.png");
+        background-color: #3563e9 ;
+    }
+
+    .hero__wrapper{
+        width: 240px;
+    }
+
+    .hero__title{
+        margin-bottom: 12px;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+
+    .hero__text{
+        display: block;
+        width: 216px;
+        margin-bottom: 16px;
+        font-size: 12px;
+        line-height: 160%;
+    }
+
 }

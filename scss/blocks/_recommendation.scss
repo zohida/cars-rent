@@ -182,6 +182,9 @@
 }
 
 @media only screen and (max-width:576px) {
+    .recommendation{
+        overflow-y:hidden ;
+    }
     .recommendation__inner {
         padding: 31px 0 48px;
     }

@@ -409,10 +409,12 @@ body {
     margin: 32px 0 0;
     width: 100%;
     max-width: 262px;
-    margin-right: auto;
+    height: 48px;
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: auto;
   }
   .site-header__img {
     width: 108px;
@@ -424,9 +426,6 @@ body {
   .site-header__image {
     display: inline-block;
     margin-left: 60px;
-  }
-  .site-header__span::before {
-    margin-left: 26px;
   }
   .site-header__span::after {
     display: none;
@@ -478,8 +477,7 @@ main {
 }
 
 .hero__wrapper {
-  width: 100%;
-  max-width: 272px;
+  width: 272px;
 }
 
 .hero__title {
@@ -527,6 +525,42 @@ main {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 576px) {
+  .hero {
+    overflow-x: scroll;
+  }
+  .hero__inner {
+    padding-bottom: 32px;
+  }
+  .hero__item {
+    padding: 16px 71px 86px 16px;
+    width: 327px;
+    background-image: url("../images/heroMobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-color: #54A6FF;
+  }
+  .hero__item:nth-child(2) {
+    background-image: url("../images/heroBg2Mobile.png");
+    background-color: #3563e9;
+  }
+  .hero__wrapper {
+    width: 240px;
+  }
+  .hero__title {
+    margin-bottom: 12px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  .hero__text {
+    display: block;
+    width: 216px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 160%;
+  }
+}
 .recommendation__inner {
   margin: 0 auto;
   padding: 42px 0 0px;
@@ -741,6 +775,9 @@ main {
 }
 
 @media only screen and (max-width: 576px) {
+  .recommendation {
+    overflow-y: hidden;
+  }
   .recommendation__inner {
     padding: 31px 0 48px;
   }
