@@ -313,6 +313,10 @@ body {
   margin-right: auto;
 }
 
+.site-header__image {
+  display: none;
+}
+
 .site-header__span::before {
   position: absolute;
   right: 0;
@@ -404,7 +408,7 @@ body {
   .site-header__wrapper {
     margin: 32px 0 0;
     width: 100%;
-    max-width: 300px;
+    max-width: 262px;
     margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -417,8 +421,15 @@ body {
   .nav__list {
     display: none;
   }
+  .site-header__image {
+    display: inline-block;
+    margin-left: 60px;
+  }
   .site-header__span::before {
     margin-left: 26px;
+  }
+  .site-header__span::after {
+    display: none;
   }
 }
 main {

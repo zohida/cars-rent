@@ -9,6 +9,12 @@
     padding: 40px 0;
 }
 
+// .site-header__wrapper{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
 .site-header__wrapper{
     display: inline-block;
     position: relative;
@@ -20,6 +26,10 @@
     border: 1px solid rgba(195, 212, 233, 0.40);
     background-color: #FFF;
     margin-right: auto;
+}
+
+.site-header__image{
+    display: none;
 }
 
 .site-header__span::before{
@@ -106,7 +116,7 @@
     .site-header__wrapper{
         margin: 32px 0 0;
         width: 100%;
-        max-width: 300px;
+        max-width: 262px;
         margin-right: auto;
         display: flex;
     }
@@ -120,9 +130,18 @@
         display: none;
     }
 
+    .site-header__image{
+        display: inline-block;
+        margin-left: 60px;
+    }
+
 
     .site-header__span::before{
         margin-left: 26px;
+    }
+
+    .site-header__span::after{
+        display: none;
     }
 
 } 
