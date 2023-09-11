@@ -1,0 +1,226 @@
+
+
+.recommendation__inner{
+    margin: 0 auto;
+    padding: 42px 0 0px;
+}
+
+.recommendation__title{
+    margin: 0 0 30px;
+    padding-left: 24px;
+    color:  #90A3BF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.recommendation__title-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommendation__title-btn{
+    border: transparent;
+    background-color: transparent;
+    color: transparent;
+    @include transition;
+}
+
+.recommendation__title-btn:hover{
+    color: red;
+}
+
+.recommendation__title-btn:active{
+    color: red;
+}
+
+
+
+.recommendation__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @include list-unstyled;
+    gap: 32px;
+}
+
+.recommendation__item{
+    width: 100%;
+    max-width: 304px;
+    height: 400px;
+    padding: 24px;
+    background-color: #fff;
+}
+
+.recommendation__subtitle{
+    margin: 0;
+    color: #1A202C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.6px;
+    position: relative;
+}
+
+.recommendation__pic{
+    display: block;
+    margin: 0 auto;
+}
+
+.recommendation__text{
+    margin: 0 0 50px;
+    color: #90A3BF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    letter-spacing: -0.28px;
+}
+
+.recommendation__sublist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin: 50px 0 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.recommendation__subtext{
+    margin: 0 0 20px;
+    color:  #90A3BF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+}
+
+.recommendation__subitem{
+    display: flex;
+    align-items: flex-start;
+}
+
+.recommendation__subitem::before{
+    display: inline-block;
+    background-image: url("../images/gas.svg");
+    width: 24px;
+    height: 24px;
+    content: "";
+    margin-right: 6px;
+}
+
+.recommendation__subitem:nth-child(2)::before{
+    background-image: url("../images/rule.svg");
+}
+
+.recommendation__subitem:nth-child(3)::before{
+    background-image: url("../images/people.svg");
+}
+
+.recommendation__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.recommendation__cost{
+    margin: 0;
+    color:  #90A3BF;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.recommendation__subprice{
+    margin: 0;
+    color:  #1A202C;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.recommendation__btn{
+    border: transparent;
+    width: 116px;
+    height: 44px;
+    border-radius: 4px;
+    background-color:  #3563E9;
+    text-align: center;
+    color:  #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+}
+
+.recommendation__wrapper{
+    display: flex;
+    align-items: center;
+    padding: 64px 0 ;
+}
+
+.show{
+    width: 156px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.recommendation__wrapper-text{
+    margin: 0;
+    color:  #90A3BF;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.28px;
+}
+
+@media only screen and (max-width:576px) {
+    .recommendation__inner {
+        padding: 31px 0 48px;
+    }
+    
+    .recommendation__title{
+        padding-left: 0;
+    }
+
+    .recommendation__img{
+        width: 142px;
+        height: 64px;
+    }
+
+    .recommendation__list{
+        padding: 0;
+        margin: 0;
+    }
+
+    .recommendation__item{
+        padding: 16px;
+    }
+
+    .recommendation__content{
+        display: flex;
+        align-items: center;
+    }
+
+    .recommendation__sublist{
+        flex-direction: column;
+        justify-content: start;
+        gap: 16px;
+        padding-left: 0;
+        padding: 0;
+    }
+
+    .recommendation__subitem{
+
+    }
+}
+
+
+

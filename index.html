@@ -9,17 +9,455 @@
 <body>
     
     <header class="site-header">
-        
+        <div class="container">
+            <div class="site-header__inner">
+                <div class="site-header__box">
+                    <a class="site-header__logo" href="index.html">
+                        <picture class="site-header__pic">
+                            <source media="(max-width:576px )" srcset="./images/logoMobile.svg">
+                            <img class="site-header__img" src="./images/logo.svg" alt="Site Logo"
+                            width="148" height="44">
+                        </picture>
+                    </a>
+                </div>
+                <div class="site-header__wrapper">
+                    <label class="site-header__lab">
+                        <span class="site-header__span">
+                            <input class="site-header__input" type="text" name="search" placeholder="Search something here">
+                        </span>
+                    </label>
+                </div>
+                <nav class="site-header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <img class="nav__img" src="./images/like.svg" alt="Likee"
+                                width="44"
+                                height="44">              
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <img class="nav__img" src="./images/notification.svg" alt="Likee"
+                                width="44"
+                                height="44">
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <img class="nav__img" src="./images/Settings.svg" alt="Likee"
+                                width="44"
+                                height="44">
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__btn">
+                                <img class="nav__img" src="./images/profil.svg" alt="Likee"
+                                width="44"
+                                height="44">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     
     <main>
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
-                    
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            <div class="hero__wrapper">
+                                <h2 class="hero__title">
+                                    The Best Platform for Car Rental
+                                </h2>
+                                <p class="hero__text">
+                                    Ease of doing a car rental safely and reliably. Of course at a low price.
+                                </p>
+                            </div>  
+                            <button class="hero__btn">
+                                Rental Car
+                            </button>
+                        </li>
+                        <li class="hero__item">
+                            <div class="hero__wrapper">
+                                <h2 class="hero__title">
+                                    Easy way to rent a car at a low price
+                                </h2>
+                                <p class="hero__text">
+                                    Providing cheap car rental services and safe and comfortable facilities.
+                                </p>
+                            </div>  
+                            <button class="hero__btn second">
+                                Rental Car
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
+        
+        <section class="filter">
+            <div class="container">
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <input type="radio" name="radio" >
+                    </li>
+                    <li class="filter__item">
+                        
+                    </li>
+                    <li class="filter__item">
+                        
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="popular-car">
+            <div class="container">
+                <div class="popular-car__inner"></div>
+            </div>
+        </section>
+        
+        <section class="recommendation">
+            <div class="container">
+                <div class="recommendation__inner">
+                    <h3 class="recommendation__title">
+                        Recomendation Car
+                    </h3>
+                    <ul class="recommendation__list">
+                        <li class="recommendation__item">
+                            <div class="recommendation__title-wrapper">
+                                <h4 class="recommendation__subtitle">
+                                    All New Rush
+                                </h4>
+                                <button class="recommendation__title-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="recommendation__text">
+                                SUV
+                            </p>
+                            <div class="recommendation__content">
+                                <picture class="recommendation__pic">
+                                    <source media="(max-width:576px )" srcset="./images/car(11).png">
+                                    <img class="recommendation__img" src="./images/Car.png" alt="Car pic"
+                                    width="224" height="100">
+                                </picture>
+                                <ul class="recommendation__sublist">
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">70L</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">Manual</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">6 people</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommendation__box">
+                                <div class="recommendation__price">
+                                    <p class="recommendation__cost"><ins class="recommendation__subprice">$72.00/</ins>day</p>
+                                    <p class="recommendation__cost"><del>$80.00</del></p>
+                                </div>
+                                <button class="recommendation__btn" type="button">Rent Now</button>
+                            </div>
+                        </li>
+                        
+                        <li class="recommendation__item">
+                            <div class="recommendation__title-wrapper">
+                                <h4 class="recommendation__subtitle">
+                                    CR  - V
+                                </h4>
+                                <button class="recommendation__title-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="recommendation__text">
+                                SUV
+                            </p>
+                            <div class="recommendation__content">
+                                <picture class="recommendation__pic">
+                                    <source media="(max-width:576px )" srcset="./images/car(10).png">
+                                    <img class="recommendation__img" src="./images/Car(1).png" alt="Car pic"
+                                    width="248" height="100">
+                                </picture>
+                                <ul class="recommendation__sublist">
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">80L</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">Manual</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">6 people</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommendation__box">
+                                <div class="recommendation__price">
+                                    <p class="recommendation__cost"><ins class="recommendation__subprice">$80.00/</ins>day</p>
+                                </div>
+                                <button class="recommendation__btn" type="button">Rent Now</button>
+                            </div>
+                        </li>
+                        
+                        <li class="recommendation__item">
+                            <div class="recommendation__title-wrapper">
+                                <h4 class="recommendation__subtitle">
+                                    All New Terios
+                                </h4>
+                                <button class="recommendation__title-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="recommendation__text">
+                                SUV
+                            </p>
+                            <div class="recommendation__content">
+                                <picture class="recommendation__pic">
+                                    <source media="(max-width:576px )" srcset="./images/car(9).png">
+                                    <img class="recommendation__img" src="./images/Car(2).png" alt="Car pic"
+                                    width="224" height="100">
+                                </picture>
+                                <ul class="recommendation__sublist">
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">90L</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">Manual</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">6 people</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommendation__box">
+                                <div class="recommendation__price">
+                                    <p class="recommendation__cost"><ins class="recommendation__subprice">$74.00/</ins>day</p>
+                                </div>
+                                <button class="recommendation__btn" type="button">Rent Now</button>
+                            </div>
+                        </li>
+                        
+                        <li class="recommendation__item">
+                            <div class="recommendation__title-wrapper">
+                                <h4 class="recommendation__subtitle">
+                                    CR  - V
+                                </h4>
+                                <button class="recommendation__title-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="recommendation__text">
+                                SUV
+                            </p>
+                            <div class="recommendation__content">
+                                <picture class="recommendation__pic">
+                                    <source media="(max-width:576px )" srcset="./images/car(11).png">
+                                    <img class="recommendation__img" src="./images/Car(3).png" alt="Car pic"
+                                    width="248" height="100">
+                                </picture>
+                                <ul class="recommendation__sublist">
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">80L</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">Manual</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">6 people</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommendation__box">
+                                <div class="recommendation__price">
+                                    <p class="recommendation__cost"><ins class="recommendation__subprice">$80.00/</ins>day</p>
+                                </div>
+                                <button class="recommendation__btn" type="button">Rent Now</button>
+                            </div>
+                        </li>
+                        
+                        <li class="recommendation__item">
+                            <div class="recommendation__title-wrapper">
+                                <h4 class="recommendation__subtitle">
+                                    MG ZX Exclusice
+                                </h4>
+                                <button class="recommendation__title-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="recommendation__text">
+                                Hatchback
+                            </p>
+                            <div class="recommendation__content">
+                                <picture class="recommendation__pic">
+                                    <source media="(max-width:576px )" srcset="./images/image11.png">
+                                    <img class="recommendation__img" src="./images/Car(6).png" alt="Car pic"
+                                    width="264" height="108">
+                                </picture>
+                                <ul class="recommendation__sublist">
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">70L</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">Manual</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">6 people</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommendation__box">
+                                <div class="recommendation__price">
+                                    <p class="recommendation__cost"><ins class="recommendation__subprice">$76.00/</ins>day</p>
+                                    <p class="recommendation__cost"><del>$80.00</del></p>
+                                </div>
+                                <button class="recommendation__btn" type="button">Rent Now</button>
+                            </div>
+                        </li>
+                        
+                        <li class="recommendation__item">
+                            <div class="recommendation__title-wrapper">
+                                <h4 class="recommendation__subtitle">
+                                    New MG ZS
+                                </h4>
+                                <button class="recommendation__title-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="recommendation__text">
+                                SUV
+                            </p>
+                            <div class="recommendation__content">
+                                <picture class="recommendation__pic">
+                                    <source media="(max-width:576px )" srcset="./images/Car(8).png">
+                                    <img class="recommendation__img" src="./images/Car(5).png" alt="Car pic"
+                                    width="264" height="112">
+                                </picture>
+                                <ul class="recommendation__sublist">
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">80L</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">Manual</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">6 people</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommendation__box">
+                                <div class="recommendation__price">
+                                    <p class="recommendation__cost"><ins class="recommendation__subprice">$80.00/</ins>day</p>
+                                </div>
+                                <button class="recommendation__btn" type="button">Rent Now</button>
+                            </div>
+                        </li>
+                        
+                        <li class="recommendation__item">
+                            <div class="recommendation__title-wrapper">
+                                <h4 class="recommendation__subtitle">
+                                    MG ZX Excite
+                                </h4>
+                                <button class="recommendation__title-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="recommendation__content">
+                                <p class="recommendation__text">
+                                    Hatchback
+                                </p>
+                                <picture class="recommendation__pic">
+                                    <source media="(max-width:576px )" srcset="./images/image11.png">
+                                    <img class="recommendation__img" src="./images/Car(6).png" alt="Car pic"
+                                    width="224" height="108">
+                                </picture>
+                                <ul class="recommendation__sublist">
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">90L</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">Manual</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">6 people</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommendation__box">
+                                <div class="recommendation__price">
+                                    <p class="recommendation__cost"><ins class="recommendation__subprice">$74.00/</ins>day</p>
+                                </div>
+                                <button class="recommendation__btn" type="button">Rent Now</button>
+                            </div>
+                        </li>
+                        
+                        <li class="recommendation__item">
+                            <div class="recommendation__title-wrapper">
+                                <h4 class="recommendation__subtitle">
+                                    New MG ZS
+                                </h4>
+                                <button class="recommendation__title-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="recommendation__text">
+                                SUV
+                            </p>
+                            <div class="recommendation__content">
+                                <picture class="recommendation__pic">
+                                    <source media="(max-width:576px )" srcset="./images/Car(8).png">
+                                    <img class="recommendation__img" src="./images/Car(7).png" alt="Car pic"
+                                    width="264" height="112">
+                                </picture>
+                                <ul class="recommendation__sublist">
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">80L</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">Manual</p>
+                                    </li>
+                                    <li class="recommendation__subitem">
+                                        <p class="recommendation__subtext">6 people</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommendation__box">
+                                <div class="recommendation__price">
+                                    <p class="recommendation__cost"><ins class="recommendation__subprice">$80.00/</ins>day</p>
+                                </div>
+                                <button class="recommendation__btn" type="button">Rent Now</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recommendation__wrapper">
+                    <button class="recommendation__btn show" type="button">Show more car</button>
+                    <p class="recommendation__wrapper-text">120 Car</p>
+                </div>
+            </div>
+        </section>
+        
     </main>
     
     <footer class="site-footer">

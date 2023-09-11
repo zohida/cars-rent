@@ -36,11 +36,13 @@
 }
 
 .site-footer__wrapper{
-    @include flexbox(flex, center, start);
+    @include flexbox(flex, center, space-between);
 }
 
 .about__wrapper{
-    margin-right: 100px;
+    width: 100%;
+    max-width: 152px;
+    margin-right: 90px;
 }
 
 .site-footer__title{
@@ -144,8 +146,6 @@
     }
     
     .about__wrapper{
-        width: 100%;
-        max-width: 120px;
         margin-right: 60px;
     }
     
@@ -188,5 +188,6 @@
 
     
 }
+
 
 

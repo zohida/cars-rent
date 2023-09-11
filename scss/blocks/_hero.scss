@@ -1,3 +1,82 @@
 main{
     flex-grow: 1;
+    background-color: #F6F7F9;;
+}
+
+.hero__inner{
+    margin: 0;
+    padding: 0;
+    padding: 32px 0;
+}
+
+.hero__list{
+    @include flexbox(flex,center,start);
+    @include list-unstyled;
+    gap: 32px;
+}
+
+.hero__item{
+    padding: 24px 24px 112px 30px;
+    width: 100%;
+    max-width: 640px;
+    background-image: url("../images/heroBg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-color:  #54A6FF;
+}
+
+.hero__item:nth-child(2){
+    background-image: url("../images/heroBg2.png");
+    background-color: #3563e9 ;
+}
+
+
+.hero__wrapper{
+    width: 100%;
+    max-width: 272px;
+}
+
+.hero__title{
+    margin: 0 0 16px;
+    color:  #FFF;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+    letter-spacing: -0.96px;
+}
+
+.hero__text{
+    margin: 0 0 20px;
+    color:  #FFF;
+    font-weight: 500;
+    line-height: 150%; 
+    letter-spacing: -0.32px;
+}
+
+.hero__btn{
+    border: transparent;
+    width: 116px;
+    height: 44px;
+    border-radius: 4px;
+    background-color:  #3563E9;
+    text-align: center;
+    color:  #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    transition: background-color 0.5s ease;
+}
+
+.second{
+    background-color: #54A6FF;
+}
+
+.hero__btn:hover{
+    background-color: #1A37A7;
+}
+
+.hero__btn:active{
+    opacity: 0.8;
 }
