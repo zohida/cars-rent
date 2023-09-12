@@ -438,10 +438,6 @@ main {
   background-color: #F6F7F9;
 }
 
-.hero {
-  overflow-x: scroll;
-}
-
 .hero__inner {
   margin: 0;
   padding: 0;
@@ -564,6 +560,157 @@ main {
     margin-bottom: 16px;
     font-size: 12px;
     line-height: 160%;
+  }
+}
+.filter__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.filter__item {
+  padding: 24px 48px;
+  width: 100%;
+  max-width: 582px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.filter__item:nth-child(2) {
+  position: relative;
+  padding: 0;
+  text-align: center;
+}
+
+.filter__item:nth-child(2) {
+  background-color: transparent;
+}
+
+.filter__sublist {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.filter__subitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-text__wrapper {
+  width: 126px;
+}
+
+.filter__span {
+  display: inline-block;
+  width: 1px;
+  height: 48px;
+  background-color: rgba(195, 212, 233, 0.4);
+  content: "";
+  margin-left: 24px;
+}
+
+.filter__text {
+  margin: 16px 0 8px;
+  color: #1A202C;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+
+.filter__subtext {
+  margin: 0;
+  color: #90A3BF;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: -0.12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.filter__subtext::after {
+  position: absolute;
+  background-image: url("../images/arrow-down.svg");
+  width: 14px;
+  height: 14px;
+  right: 0;
+  top: 5px;
+  content: "";
+  margin-left: 8px;
+}
+
+.filter__lab {
+  color: #1A202C;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+
+.filter__lab::before {
+  display: inline-block;
+  background-image: url("../images/mark.svg");
+  width: 16px;
+  height: 16px;
+  content: "";
+  margin-right: 8px;
+}
+
+.filter__input {
+  display: none;
+}
+
+.filter__btn {
+  border: transparent;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 576px) {
+  .filter {
+    padding-left: 0;
+    margin: 0;
+  }
+  .filter__list {
+    padding-left: 0;
+    margin: 0;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filter__item {
+    width: 327px;
+    padding: 16px;
+  }
+  .filter__item:nth-child(2) {
+    z-index: 3;
+    top: -18px;
+    bottom: -18px;
+  }
+  .filter__item:nth-child(3) {
+    position: relative;
+    top: -36px;
   }
 }
 .popular-car__wrapper {
@@ -808,6 +955,31 @@ main {
   .popular-car__item {
     padding: 16px;
   }
+  .popular-car__text {
+    margin: 0 0 32px;
+    color: #90A3BF;
+    font-size: 12px;
+  }
+  .popular-car__sublist {
+    margin: 0;
+    margin: 34px 0 0;
+  }
+  .popular-car__subtext {
+    margin: 0 0 20px;
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+  }
+  .popular-car__cost {
+    font-size: 12px;
+  }
+  .popular-car__subprice {
+    color: #1A202C;
+    font-size: 16px;
+  }
 }
 .recommendation__inner {
   margin: 0 auto;
@@ -1049,7 +1221,8 @@ main {
     margin: 0;
   }
   .recommendation__item {
-    padding: 16px;
+    padding: 16px 16px 0;
+    max-width: 327px;
   }
   .recommendation__content {
     display: -webkit-box;
@@ -1070,6 +1243,34 @@ main {
     gap: 16px;
     padding-left: 0;
     padding: 0;
+  }
+  .recommendation__subtitle {
+    font-size: 16px;
+  }
+  .recommendation__text {
+    margin: 0 0 32px;
+    color: #90A3BF;
+    font-size: 12px;
+  }
+  .recommendation__sublist {
+    margin: 0;
+    margin: 34px 0 0;
+  }
+  .recommendation__subtext {
+    margin: 0 0 20px;
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+  }
+  .recommendation__cost {
+    font-size: 12px;
+  }
+  .recommendation__subprice {
+    color: #1A202C;
+    font-size: 16px;
   }
 }
 .site-footer__top {

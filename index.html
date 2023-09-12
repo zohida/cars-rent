@@ -103,17 +103,97 @@
         
         <section class="filter">
             <div class="container">
-                <ul class="filter__list">
-                    <li class="filter__item">
-                        <input type="radio" name="radio" >
-                    </li>
-                    <li class="filter__item">
-                        
-                    </li>
-                    <li class="filter__item">
-                        
-                    </li>
-                </ul>
+                <div class="filter__inner">
+                    <h3 class="visually-hidden">Filter</h3>
+                    <ul class="filter__list">
+                        <li class="filter__item">
+                            <label class="filter__lab" for="filter">
+                                <input class="filter__input" type="radio" name="radio-1" id="filter" checked>
+                                Pick-Up
+                            </label>
+                            <ul class="filter__sublist">
+                                <li class="filter__subitem">
+                                    <div class="filter-text__wrapper">
+                                        <p class="filter__text">
+                                            Locations
+                                        </p>
+                                        <p class="filter__subtext">
+                                            Select your city
+                                        </p>
+                                    </div>
+                                    <span class="filter__span"></span>
+                                </li>
+                                <li class="filter__subitem">
+                                    <div class="filter-text__wrapper">
+                                        <p class="filter__text">
+                                            Date
+                                        </p>
+                                        <p class="filter__subtext">
+                                            Select your date
+                                        </p>
+                                    </div>
+                                    <span class="filter__span"></span>
+                                </li>
+                                <li class="filter__subitem">
+                                    <div class="filter-text__wrapper">
+                                        <p class="filter__text">
+                                            Time
+                                        </p>
+                                        <p class="filter__subtext">
+                                            Select your time
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__btn" type="reset">
+                                <img src="./images/switch1.svg" alt="Switch btn"
+                                width="60" height="60">
+                            </button>
+                        </li>
+                        <li class="filter__item">
+                            <label class="filter__lab" for="button">
+                                <input class="filter__input" id="button" type="radio" name="radio-1" checked>
+                                Drop-Off
+                            </label>
+                            <ul class="filter__sublist">
+                                <li class="filter__subitem">
+                                    <div class="filter-text__wrapper">
+                                        <p class="filter__text">
+                                            Locations
+                                        </p>
+                                        <p class="filter__subtext">
+                                            Select your city
+                                        </p>
+                                    </div>
+                                    <span class="filter__span"></span>
+                                </li>
+                                <li class="filter__subitem">
+                                    <div class="filter-text__wrapper">
+                                        <p class="filter__text">
+                                            Date
+                                        </p>
+                                        <p class="filter__subtext">
+                                            Select your date
+                                        </p>
+                                    </div>
+                                    <span class="filter__span"></span>
+                                </li>
+                                <li class="filter__subitem">
+                                    <div class="filter-text__wrapper">
+                                        <p class="filter__text">
+                                            Time
+                                        </p>
+                                        <p class="filter__subtext">
+                                            Select your time
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         
@@ -166,7 +246,7 @@
                                 <button class="popular-car__btn" type="button">Rent Now</button>
                             </div>
                         </li>
-            
+                        
                         <li class="popular-car__item">
                             <div class="popular-car__title-wrapper">
                                 <h4 class="popular-car__subtitle">
