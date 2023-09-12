@@ -3,6 +3,10 @@ main{
     background-color: #F6F7F9;;
 }
 
+.hero{
+    overflow-x: scroll;
+}
+
 .hero__inner{
     margin: 0;
     padding: 0;
@@ -83,6 +87,7 @@ main{
 
 @media only screen and (max-width:576px) {
     .hero{
+    
         overflow-x: scroll;
     }
 
@@ -90,9 +95,11 @@ main{
         padding-bottom: 32px;
     }
 
+
     .hero__item{
-        padding: 16px 71px 86px 16px;
-        width: 327px;
+        padding: 16px 71px 96px 16px;
+        width: 100%;
+        min-width: 327px;
         background-image: url("../images/heroMobile.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -106,7 +113,7 @@ main{
     }
 
     .hero__wrapper{
-        width: 240px;
+        width: 260px;
     }
 
     .hero__title{
