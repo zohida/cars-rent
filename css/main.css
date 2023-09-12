@@ -285,6 +285,13 @@ body {
   padding: 0 20px;
 }
 
+.container__about {
+  width: 100%;
+  max-width: 1056px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .site-header {
   margin: 0;
   padding: 0;
@@ -689,7 +696,6 @@ main {
   .filter {
     padding-left: 0;
     margin: 0;
-    overflow-x: scroll;
   }
   .filter__list {
     padding-left: 0;
@@ -699,19 +705,99 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .filter__item {
-    width: 327px;
-    padding: 16px;
+    overflow-x: scroll;
   }
   .filter__item:nth-child(2) {
     z-index: 3;
     top: -18px;
     bottom: -18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .filter__item:nth-child(3) {
     position: relative;
     top: -36px;
+  }
+}
+.site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.checkboxes {
+  width: 35%;
+  border-right: 0.5px solid #F3F6FA;
+  background-color: #fff;
+}
+
+.checkbox {
+  padding: 32px;
+  background-color: #fff;
+}
+
+.checkbox__text {
+  margin: 0;
+  margin-bottom: 28px;
+  color: #90A3BF;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.checkbox__form {
+  margin-bottom: 56px;
+}
+
+.checkbox__box {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.checkbox__box:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox__input {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox__label {
+  color: #596780;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+
+.checkbox__span {
+  color: #90A3BF;
+}
+
+.checkbox__subtext {
+  margin: 0;
+  margin-top: 16px;
+  color: #596780;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+
+.checkbox__range {
+  width: 296px;
+}
+
+@media only screen and (max-width: 576px) {
+  .checkboxes {
+    display: none;
   }
 }
 .popular-car__wrapper {
@@ -1039,8 +1125,7 @@ main {
 }
 
 .recommendation__item {
-  width: 100%;
-  max-width: 304px;
+  width: 304px;
   height: 400px;
   padding: 24px;
   background-color: #fff;
@@ -1272,6 +1357,37 @@ main {
   .recommendation__subprice {
     color: #1A202C;
     font-size: 16px;
+  }
+}
+.recent__body {
+  background-color: #F6F7F9;
+}
+
+.recent {
+  padding: 42px 0 32px;
+}
+
+.recent__item {
+  width: 317px;
+}
+
+@media only screen and (max-width: 576px) {
+  .recent__list {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-x: scroll;
   }
 }
 .site-footer__top {
