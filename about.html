@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars Rent</title>
+    <link rel="stylesheet" href="./css/feedback.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -127,7 +128,7 @@
                 
                 <p class="checkboxes__text">P R I C E</p>
                 
-                <input type="range" name="volume" min="0" max="11" />
+                <input type="range" name="cost" min="0" max="11" />
                 <p class="checkboxes__subtext">Max. $100.00</p>
                 
             </div>
@@ -177,7 +178,7 @@
                                 <h2 class=" popular-car__subtitle design__subtitle">
                                     Nissan GT - R
                                 </h2>
-                            
+                                
                                 <button class="popular-car__title-btn">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -224,11 +225,70 @@
                                 </div>
                                 <button class="popular-car__btn" type="button">Rent Now</button>
                             </div>
+                        </div>
                     </div>
                 </div>
             </section>
             
-            <section class="popular-car">
+            <section class="feedback">
+                <div class="container__about">
+                    <div class="feedback__inner">
+                        <div class="feedback__title-wrapper">
+                            <h2 class="feedback__title">
+                                Reviews
+                            </h2>
+                            <button class="feedback__btn" type="button">13</button>
+                        </div>
+                        <ol class="feedback__list">
+                            <li class="feedback__item">
+                                <div class="feedback__author">
+                                    <div class="feedback__author-name">
+                                        <div class="author-name">
+                                            <p class="feedback__name">
+                                                Alex Stanton
+                                            </p>
+                                            <p class="feedback__job">
+                                                CEO at Bukalapak
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="feedback__time">
+                                        <a class="feedback__date" href="">21 July 2022</a>
+                                    </div>
+                                </div>
+                                <p class="feedback__text">
+                                    We are very happy with the service from the MORENT App. Morent has a low price and also a 
+                                    large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                                </p>
+                            </li>
+                            <li class="feedback__item">
+                                <div class="feedback__author">
+                                    <div class="feedback__author-name name-author">
+                                      <div class="author-name">
+                                        <p class="feedback__name">
+                                            Skylar Dias
+                                        </p>
+                                        <p class="feedback__job">
+                                            CEO at Amazon
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="feedback__time">
+                                        <a class="feedback__date" href="">20 July 2022</a>
+                                    </div>
+                                </div>
+                                <p class="feedback__text">
+                                    We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars 
+                                    with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                                </p>
+                            </li>
+                        </ol>
+                        <button class="feedback__button">Show All</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular-car recent__body">
                 <div class="container__about">
                     <div class="popular-car__inner">
                         <div class="popular-car__wrapper">
@@ -363,7 +423,7 @@
                 </div>
             </section>
             
-            <section class="recommendation">
+            <section class="recommendation recent__body">
                 <div class="container__about">
                     <div class="recommendation__inner recent">
                         <div class="popular-car__wrapper">

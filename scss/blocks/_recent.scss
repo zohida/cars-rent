@@ -1,6 +1,4 @@
-.recent__body{
-    background-color: #F6F7F9;
-}
+
 
 .recent{
     padding: 42px 0 32px;
@@ -19,6 +17,10 @@
         flex-wrap: nowrap;
         align-items: center;
         flex-direction: row;
+        overflow-x: scroll;
+    }
+
+    .recent__body{
         overflow-x: scroll;
     }
 

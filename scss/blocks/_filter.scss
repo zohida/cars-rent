@@ -110,7 +110,7 @@
 }
 
 @media only screen and (max-width:576px){
-
+    
     .filter{
         padding-left: 0;
         margin: 0;
@@ -123,8 +123,18 @@
         flex-direction: column;
         overflow-x: scroll;
     }
-
-
+    
+    .filter__item{
+        width: 327px;
+        padding: 16px;
+        width: 100%;
+        max-width: 582px;
+        background-color: #fff;
+        border-radius: 10px;
+        
+    }
+    
+    
     .filter__item:nth-child(2){
         z-index: 3;
         top: -18px;
@@ -133,10 +143,91 @@
         right: 0;
         margin: 0 auto;
     }
-
+    
     .filter__item:nth-child(3){
         position: relative;
         top: -36px;
+    }
+    
+    
+    .filter__sublist{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 25px;
+    }
+    
+    
+    .filter-text__wrapper{
+        width: 76px;
+    }
+    
+    .filter__span{
+        display: inline-block;
+        width: 1px;
+        height: 44px;
+        background-color: rgba(195, 212, 233, 0.40);
+        content: "";
+        margin-left: 24px;
+    }
+    
+    .filter__text{
+        margin: 24px 0 8px;
+        color: #1A202C;
+        font-weight: 700;
+        line-height: 150%; 
+        letter-spacing: -0.32px;
+    }
+    
+    .filter__subtext{
+        margin: 0;
+        color:  #90A3BF;;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 200%;
+        letter-spacing: -0.12px;
+        display: flex;
+        position: relative;
+    }
+    
+    .filter__subtext::after{
+        position: absolute;
+        background-image: url("../images/arrow-down.svg");
+        width: 12px;
+        height: 12px;
+        right: 0;
+        top: 5px;
+        content: "";
+        margin-left: 8px;
+    }
+    
+    
+    .filter__lab{
+        color: #1A202C;
+        font-weight: 600;
+        line-height: 150%; 
+        letter-spacing: -0.32px;
+    }
+    
+    .filter__lab::before{
+        display: inline-block;
+        background-image: url("../images/mark.svg");
+        width: 14px;
+        height: 14px;
+        content: "";
+        margin-right: 8px;
+    }
+    
+    
+    .filter__input{
+        display: none;
+    }
+    
+    .filter__btn{
+        border: transparent;
+        background-color: transparent;
     }
     
 }
